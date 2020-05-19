@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+@import 'palette';
+
+@include mat-core;
+
+$primary-light: mat-palette($walmart-light-blue, 500, 400, 700);
+$primary: mat-palette($walmart-international-dark-navy, 500, 400, 700);
+$accent: mat-palette($walmart-yellow, 500, 400, 700);
+$accent2: mat-palette($walmart-fresh-green, 500, 400, 700);
+$warn: mat-palette($walmart-red, 500, 400, 700);
+$light: mat-palette($walmart-light-blue, 400, 400, 700);
+$system: mat-palette($walmart-yellow, 400, 400, 700);
+$white-text: mat-palette($white, 500, 400, 700);
+
+$theme: mat-light-theme($primary, $accent, $warn);

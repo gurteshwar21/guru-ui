@@ -1,0 +1,89 @@
+
+@import 'styles/walmart-light';
+@import 'styles/palette';
+@import 'styles/variables';
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '../node_modules/bootstrap-material-design/dist/css/bootstrap-material-design.css';
+html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: BogleRegular;
+    height: 100%;
+    margin: 0;
+  }
+  
+  h1 {
+    @include headline-1;
+  }
+  
+  h2 {
+    @include headline-2;
+  }
+  
+  h3 {
+    @include headline-3;
+    margin: 0 !important;
+  }
+  
+  h4 {
+    @include headline-4;
+  }
+  
+  h5 {
+    @include headline-5;
+  }
+  
+  h6 {
+    @include headline-6;
+  }
+  
+  .error-alert-toast {
+    background-color: $warn !important; // sass-lint:disable-line no-important
+    color: $white !important; // sass-lint:disable-line no-important
+  
+    & .mat-simple-snackbar-action {
+      @include opacity-70;
+      color: $white;
+    }
+  }
+  
+  .mat-dialog-container {
+    padding: 0 !important; // sass-lint:disable-line no-important
+  }
+  
+  @include mat-core;
+  @include angular-material-theme($theme);
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.fileUpload-content{
+ text-align:center;
+ margin-left: 100px;
+}
+
+.main{
+  margin-bottom: 100px;
+}
+
+.tData{
+  margin-bottom: 0px;
+}
+
+.tData > thead{ 
+background-color: #cccccc;
+color: #000000;
+}
+
+.tData > thead > th{
+text-align: center;
+}
+
+
+
+.clr{
+background-color: #ffffff; 
+}
+
+

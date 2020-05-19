@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-md-6">
+        
+        <div class="file-upload-container">
+            <mat-card class="file-upload-container">
+                <mat-card-content>
+                    <mat-card-actions> 
+                        <div class="file-upload-container" (click)="onClick()" >
+                            <input hidden type="file" #fileUpload id="fileUpload" name="fileUpload" multiple="multiple"   style="display:none;">
+                            Browse files or drop
+                        </div>
+                        
+                    </mat-card-actions>
+                      
+                   
+                </mat-card-content>
+        
+            </mat-card>
+        </div>
+    </div>
+    <div class="col-md-6" *ngIf="abs >=1" >
+        <div class="container">
+            <div class="row">
+              <table class="table table-bordered table-striped tData">
+                <thead>
+                  <th>Import Name</th>
+                  <th>% percentage</th>
+                  <th>Delete</th>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let file of files;let i=index">
+                    <td>{{ file.data.name }}</td>
+                    <td>{{ file.progress}}% <mat-progress-bar color="accent" mode="determinate" [value]="file.progress" ></mat-progress-bar> </td>
+                    <td class="material-icons"  (click)="deleteAttachment(i)">
+                      delete_outline
+                      </td>
+                  </tr>
+                 
+                </tbody>
+          
+              </table>
+            </div>
+          </div>
+    </div>
+</div>
+
+
+

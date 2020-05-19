@@ -1,0 +1,118 @@
+@import 'fonts';
+
+@mixin overline {
+  font-family: BogleBold;
+  font-size: 12px;
+  font-weight: bold;
+  height: 16px;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@mixin headline-1 {
+  font-family: BogleRegular;
+  font-size: 96px;
+  height: 112px;
+  letter-spacing: -1.5px;
+  line-height: 112px;
+}
+
+@mixin headline-2 {
+  font-family: BogleRegular;
+  font-size: 60px;
+  height: 60px;
+  letter-spacing: -0.5px;
+  line-height: 60px;
+}
+
+@mixin headline-3 {
+  font-family: BogleRegular;
+  font-size: 48px;
+  height: 56px;
+  line-height: 56px;
+}
+
+@mixin headline-4 {
+  font-family: BogleRegular;
+  font-size: 34px;
+  height: 40px;
+  letter-spacing: 0.25px;
+  line-height: 40px;
+}
+
+@mixin headline-5 {
+  font-family: BogleRegular;
+  font-size: 24px;
+  height: 28px;
+  line-height: 28px;
+}
+
+@mixin headline-6 {
+  font-family: BogleRegular;
+  font-size: 20px;
+  height: 24px;
+  letter-spacing: 0.25px;
+  line-height: 24px;
+}
+
+@mixin body-1 {
+  font-family: BogleRegular;
+  font-size: 16px;
+  height: 28px;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+}
+
+@mixin body-2 {
+  font-family: BogleRegular;
+  font-size: 14px;
+  font-weight: normal;
+  height: 20px;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+}
+
+@mixin subtitle-1 {
+  font-family: BogleRegular;
+  font-size: 16px;
+  height: 24px;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+}
+
+@mixin subtitle-2 {
+  font-family: BogleRegular;
+  font-size: 14px;
+  height: 24px;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+}
+
+@mixin button {
+  font-family: BogleBold;
+  font-size: 14px;
+  font-weight: bold;
+  height: 16px;
+  letter-spacing: 1.25px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+@mixin caption {
+  font-family: BogleRegular;
+  font-size: 12px;
+  height: 14px;
+  letter-spacing: 0.4px;
+  line-height: 14px;
+}
+
+@mixin underline {
+  text-decoration: underline;
+}
+
+@mixin truncate-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,54 @@
+@import 'palette';
+
+// PRIMARY COLORS
+$primary-light: map-get($walmart-light-blue, 500);
+$primary: map-get($walmart-international-dark-navy, 500);
+$main-text: rgba(0, 0, 0, 0.87);
+
+// SECONDARY COLORS
+$accent: map-get($walmart-yellow, 500);
+$accent2: map-get($walmart-fresh-green, 500);
+$warn: map-get($walmart-red, 500);
+$medium: #0071ce;
+$light: #e1edf9;
+$system: map-get($walmart-yellow, 400);
+$pink: #eb148d;
+$orange: #f47521;
+$new-blue: #4c94c0;
+
+// ACCESSBILITY COLORS
+$muted-black: #3f3f40;
+$muted-grey: #ccc;
+$muted-medium-blue: #4489b5;
+$muted-dark-blue: #07141d;
+
+// STANDARD SHADES
+$black: map-get($black, 500);
+$white: map-get($white, 500);
+$grey: #f9fafb;
+
+// TRANSPARENCY
+@mixin opacity-87 {
+  opacity: 0.87;
+}
+@mixin opacity-70 {
+  opacity: 0.7;
+}
+@mixin opacity-60 {
+  opacity: 0.6;
+}
+@mixin opacity-54 {
+  opacity: 0.54;
+}
+@mixin opacity-38 {
+  opacity: 0.38;
+}
+@mixin opacity-18 {
+  opacity: 0.18;
+}
+@mixin opacity-12 {
+  opacity: 0.12;
+}
+@mixin opacity-6 {
+  opacity: 0.06;
+}

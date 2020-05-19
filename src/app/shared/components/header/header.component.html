@@ -1,0 +1,17 @@
+<mat-toolbar class="app-header" color="primary" id="shared-header" [ngClass.xs]="'header-mobile'">
+    <div class="mat-toolbar-row header-row" >
+      <div class="header-left-icon">
+        <mat-icon (click)="toggleSideNav()">
+           menu
+        </mat-icon>
+      </div>
+      <div class="header-title">{{ toolbarTitle }}</div>
+      <div
+      class="header-right-icons"
+      [ngClass.gt-sm]="{ 'sidenav-opened': openNav }"
+    >
+      <mat-icon
+        >search</mat-icon
+      ></div>
+    </div>
+  </mat-toolbar>

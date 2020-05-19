@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row clr">
+    <div class="col-md-12 nopad">
+      <table class="table table-hover tData">
+        <thead>
+          <tr class="row nomar">
+            <th class="col-md-5">Import Name</th>
+            <th class="col-md-5">% percentage</th>
+            <th class="col-md-2">Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row nomar">
+            <td class="col-md-5">file 1</td>
+            <td class="col-md-5">50%</td>
+            <td class="col-md-2"><button mat-button [matMenuTriggerFor]="menu"></button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>Delete </button>
+              </mat-menu>
+              <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+            </td>
+          </tr>
+          <tr class="row nomar">
+            <td class="col-md-5">file 2</td>
+            <td class="col-md-5">89%</td>
+            <td class="col-md-2"><button mat-button [matMenuTriggerFor]="menu"></button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>Delete </button>
+              </mat-menu>
+              <button mat-icon-button [matMenuTriggerFor]="menu">
+                <mat-icon>more_vert</mat-icon>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

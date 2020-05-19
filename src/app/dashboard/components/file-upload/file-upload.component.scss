@@ -1,0 +1,19 @@
+.file-upload-container{
+    width: 400px;
+    height: 250px;
+}
+
+.mat-card>:first-child, .mat-card-content>:first-child{
+    margin-top: 73px;
+}
+@import 'variables';
+
+.nopad{
+    padding-left: 0px;
+    padding: 0px;
+    }
+
+    .nomar{
+        margin-right: 0px  !important;
+        margin-left: 0px !important;
+        }
